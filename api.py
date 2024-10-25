@@ -1,5 +1,9 @@
 import os
+from flask import Flask, render_template, request, redirect, url_for
 from groq import Groq
+
+# Initialize the Flask application
+app = Flask(__name__, template_folder='template')
 
 # Initialize the client using the environment variable for the API key
 client = Groq(
@@ -9,42 +13,55 @@ client = Groq(
 # Function to filter sensitive topics
 def filter_sensitive_input(user_input):
     sensitive_topics = ['black', 'race', 'gender', 'ethnicity', 'religion', 'disability', 'sexuality']
-    
-    # Check if the input contains any sensitive words
     return not any(topic in user_input.lower() for topic in sensitive_topics)
 
 # Function to get a roast based on user input and roast level
 def get_roast(user_input, roast_level):
     if not filter_sensitive_input(user_input):
         return "I can't roast you on that topic. Let's keep it fun and respectful!"
-    
-    # Define roast prompts for different levels
+
     prompts = {
         "mild": f"Give a mild but effective roast for this statement: \"{user_input}\". Keep it playful.",
-        "medium": f"Give a medium level, witty, funny and embarassing roast for this statement: \"{user_input}\". It should be humorous .",
-        "high": f"Give a high-intensity, highly embarassing roast for this statement: \"{user_input}\". Go for something really witty and sarcastic."
+        "medium": f"Give a medium level, witty, funny and embarrassing roast for this statement: \"{user_input}\".",
+        "high": f"Give a high-intensity, highly embarrassing roast for this statement: \"{user_input}\"."
     }
     
-    # Select the appropriate prompt based on roast level
-    roast_prompt = prompts.get(roast_level, prompts["mild"])  # Default to mild if level is invalid
+    roast_prompt = prompts.get(roast_level, prompts["mild"])
     
-    # API call to generate the roast using the gemma2-9b-it model
     chat_completion = client.chat.completions.create(
-        messages=[
-            {
-                "role": "user",
-                "content": roast_prompt,
-            }
-        ],
+        messages=[{"role": "user", "content": roast_prompt}],
         model="gemma2-9b-it",
     )
     
-    # Extract and return the roast message from the API response
     return chat_completion.choices[0].message.content
 
-# Example of how this would work in a website backend context
+# Route for the main roast selection page (index.html)
+@app.route("/", methods=["GET", "POST"])
+def home():
+    return render_template("index.html")
+
+# Route for the personalization form (index2.html)
+@app.route("/personalize", methods=["POST"])
+def personalize():
+    name = request.form.get("name")
+    traits = request.form.get("traits")
+    hobbies = request.form.get("hobbies")
+    
+    # Generate a roast based on name, traits, and hobbies
+    roast_response = get_roast(f"{name} is {traits} and likes {hobbies}", "mild")
+    return redirect(url_for('show_roast', roast=roast_response))
+
+# Route for handling roast levels and rendering index2.html
+@app.route("/roast/<level>", methods=["GET"])
+def select_roast(level):
+    return render_template("index2.html", roast_level=level)
+
+# Route to display the roast result
+@app.route("/roast/result")
+def show_roast():
+    roast = request.args.get('roast')  # Get the roast from the query parameter
+    return render_template("index3.html", roast=roast)
+
+# Run the Flask application
 if __name__ == "__main__":
-    user_input = input("Enter something to be roasted (e.g., 'I am fat'): ")
-    roast_level = input("Enter roast level (mild, medium, high): ").lower()
-    roast_response = get_roast(user_input, roast_level)
-    print(f"Roast: {roast_response}")
+    app.run(debug=True)
