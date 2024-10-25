@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrillMe</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -33,18 +33,18 @@
                 <div class="roast">
                     <h3>Mild Roast</h3>
                     <p>Perfect for those who enjoy a light-hearted jab!</p>
-                    <a href="{{ url_for('roast', level='mild') }}"><button>Get My Mild Roast!</button></a>
-                </div>
+                    <a href="index2.html?level=mild"><button>Get My Mild Roast!</button>
+                </div></a>
                 <div class="roast">
                     <h3>Medium Roast</h3>
                     <p>A bit spicier, just enough to get some laughs!</p>
-                    <a href="{{ url_for('roast', level='medium') }}"><button>Get My Medium Roast!</button></a>
-                </div>
+                    <a href="index2.html?level=medium"><button>Get My Medium Roast!</button>
+                </div></a>
                 <div class="roast">
                     <h3>High Roast</h3>
                     <p>For the bold, ready to handle the heat!</p>
-                    <a href="{{ url_for('roast', level='high') }}"><button>Get My High Roast!</button></a>
-                </div>
+                    <a href="index2.html?level=high"><button>Get My High Roast!</button>
+                </div></a>
             </div>
             <section class="about">
                 <h2>About GrillMe</h2>
@@ -67,3 +67,4 @@
     </div>
 </body>
 </html>
+
