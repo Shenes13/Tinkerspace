@@ -18,19 +18,29 @@ header {
 
 .logo {
     font-size: 2.5em;
-    font-weight: bold;
-    color: #fff;
+    font-weight: 600;
+    color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav ul {
+    transition: transform 0.1s;
     list-style: none;
-    padding: 0;
+    padding: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 25px;
 }
+
+nav ul li a{
+    transition: transform 1.0s ease-in;
+}
+
+nav ul li a:hover{
+    transform: scale(1.1);
+} 
 
 nav a {
     text-decoration: none;
@@ -43,7 +53,7 @@ nav a {
     padding: 50px 20px;
     background-image: url('https://example.com/grill-background.jpg'); /* Replace with an actual image URL */
     background-size: cover;
-    color: #fff;
+    color: rgb(255, 163, 163);
 }
 
 .hero h1 {
@@ -65,6 +75,8 @@ nav a {
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
+    width: 400px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
@@ -145,5 +157,17 @@ footer a {
     margin: 0 10px;
 }
 .baground{
-    
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://cdn.leonardo.ai/users/0ec1b094-a024-4886-8ba0-738ab55b3ee5/generations/ca5fca86-4284-4063-92c8-e8d486b3f0b8/Leonardo_Phoenix_Create_an_aesthetic_background_image_for_a_fu_2.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-size: cover;
+}
+.navbar{
+    text-align: center;
+    box-shadow: #333;
+}
+.heading2{
+    color: white;
 }
