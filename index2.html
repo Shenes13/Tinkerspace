@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrillMe Personalized</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="baground">
+        <header>
+            <div class="logo">GrillMe Personalized</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Roasts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Let's Get to Know You!</h1>
+                <p>Tell us a bit about yourself, and we’ll deliver a customized roast just for you!</p>
+            </section>
+            
+            <center><h2 class="heading2">Personalize Your Roast</h2></center>
+            
+            <section class="personalization-form">
+                <form action="/generate_roast" method="post">
+                    <center><div>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div></center>
+                    <center><div>
+                        <label for="traits">Describe Yourself in a Few Words:</label>
+                        <input type="text" id="traits" name="traits" placeholder="e.g., funny, clumsy, ambitious" required>
+                    </div></center>
+                    <center><div>
+                        <label for="hobbies">Your Hobbies or Interests:</label>
+                        <input type="text" id="hobbies" name="hobbies" placeholder="e.g., gaming, cooking, painting" required>
+                    </div></center>
+                    <button type="submit">Generate My Roast</button>
+                </form>
+            </section>
+            
+            <section class="about">
+                <h2>About GrillMe Personalized</h2>
+                <p>GrillMe Personalized provides custom roasts based on your personality and interests. Ready for the laughs?</p>
+            </section>
+            
+            <section class="contact">
+                <h2>Get in Touch!</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 GrillMe Personalized. All Rights Reserved.</p>
+            <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>
