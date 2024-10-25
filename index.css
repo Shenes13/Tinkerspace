@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff3e0;
+    color: #333;
+}
+
+header {
+    background-color: #ff7043;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('https://example.com/grill-background.jpg'); /* Replace with an actual image URL */
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.roast-options {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.roast {
+    background-color: #ffe0b2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.roast:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.roast h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.roast p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+.about, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff8e1;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.about h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ff7043;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 90%;
+}
+
+form button {
+    width: 150px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7043;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.baground{
+    
+}
