@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrillMe</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/static/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -33,17 +33,26 @@
                 <div class="roast">
                     <h3>Mild Roast</h3>
                     <p>Perfect for those who enjoy a light-hearted jab!</p>
-                    <button>Get My Mild Roast!</button>
+                    <form action="/submit" method="POST">
+                        <input type="hidden" name="roast_intensity" value="Mild">
+                        <button type="submit">Get My Mild Roast!</button>
+                    </form>
                 </div>
                 <div class="roast">
                     <h3>Medium Roast</h3>
                     <p>A bit spicier, just enough to get some laughs!</p>
-                    <button>Get My Medium Roast!</button>
+                    <form action="/submit" method="POST">
+                        <input type="hidden" name="roast_intensity" value="Medium">
+                        <button type="submit">Get My Medium Roast!</button>
+                    </form>
                 </div>
                 <div class="roast">
                     <h3>High Roast</h3>
                     <p>For the bold, ready to handle the heat!</p>
-                    <button>Get My High Roast!</button>
+                    <form action="/submit" method="POST">
+                        <input type="hidden" name="roast_intensity" value="High">
+                        <button type="submit">Get My High Roast!</button>
+                    </form>
                 </div>
             </div>
             <section class="about">
@@ -67,4 +76,3 @@
     </div>
 </body>
 </html>
-
