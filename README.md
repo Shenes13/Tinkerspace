@@ -36,46 +36,33 @@ Tools used -
 ### Implementation
 For Software:
 # Installation
-[commands]
+-clone the repo
+-Open the HTML files in VSCode. deploy(Go live) index.html
 
 # Run
-[commands]
+Deploy(Go live) index.html
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-Add caption explaining what this shows
+![image](https://github.com/user-attachments/assets/32a65e54-8eb8-446f-bb24-5648a39cfd13)
+This shows the homepage of our site where user chooses the roast level
 
-![Screenshot2](Add screenshot 2 here with proper name)
-Add caption explaining what this shows
+![image](https://github.com/user-attachments/assets/212dec96-f20c-409d-8f46-cb95d9a6507c)
+This is the second page of our site where user enters details based on which roast is created
 
-![Screenshot3](Add screenshot 3 here with proper name)
-Add caption explaining what this shows
+![image](https://github.com/user-attachments/assets/01acd8c4-795a-47d3-8e76-9dea97acc64c)
+This is the final page where the roast is supposed to be shown
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-Add caption explaining your workflow
+![image](https://github.com/user-attachments/assets/9c73b3b5-8c61-4d8a-96b5-071e5a58f071)
 
 For Hardware:
 
 # Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-Add caption explaining connections
-
-![Schematic](Add your schematic diagram here)
-Add caption explaining the schematic
 
 # Build Photos
-![Components](Add photo of your components here)
-List out all components shown
-
-![Build](Add photos of build process here)
-Explain the build steps
-
-![Final](Add photo of final product here)
-Explain the final build
 
 ### Project Demo
 # Video
@@ -86,10 +73,9 @@ Explain what the video demonstrates
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
+-Rohit M R : Frontend
+-Shenes Eapen Koshi : integrating this chatbot and website together
+-Rohith R : creating roast using flask and groq
 ---
 Made with ❤ at TinkerHub Useless Projects 
 
