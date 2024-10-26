@@ -10,7 +10,7 @@
 ### Team Members
 - Team Lead: Rohit M R - CUSAT
 - Member 2: Shenes Eapen Koshi - CUSAT
-- Member 3: Rohith R
+- Member 3: Rohith R - CUSAT
 
 ### Project Description
 It is a roast generator. User can decide the intensity at which he/she is gonna recieve the roast, and then give some details about them and based on these details they get roasted.
