@@ -4,31 +4,32 @@
 
 
 ## Basic Details
-### Team Name: All Stars
+### Team Name: Code Crafters
 
 
 ### Team Members
-- Team Lead: Sebin Thomas - CUSAT
-- Member 2: Nidhin Jyothi - CUSAT
+- Team Lead: Rohit M R - CUSAT
+- Member 2: Shenes Eapen Koshi - CUSAT
+- Member 3: Rohith R
 
 ### Project Description
-[2-3 lines about what your project does]
+It is a roast generator. User can decide the intensity at which he/she is gonna recieve the roast, and then give some details about them and based on these details they get roasted.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Lack of entertainment
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+By building something that excites people but does'nt aim at maintainig it.
 
 ## Technical Details
 ### Technologies/Components Used
-For Software:
+For Software: 
 
 Languages used - Html,CSS,Python
 
 Frameworks used - Groq,Flask
 
-Main Libraries used - Flask,Flask-Login,Flask-Mail,Flask-Migrate,Flask-SQLAlchemy,groq,PyPDF2,reportlab,SQLAlchemy,Werkzeug
+Main Libraries used - flask, flask.json, Jinja2, Flask-WTF, Flask-SQLAlchemy, Flask-Session, Flask-Bootstrap, Flask-Script, Flask-Migrate
 
 Tools used - 
 
