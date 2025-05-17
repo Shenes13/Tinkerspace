@@ -9,7 +9,7 @@
 
 ### Team Members
 - Team Lead: Rohit M R - CUSAT
-- Member 2: Shenes Eapen Koshi - CUSAT
+- Member 2: Shenes Eapen Koshy - CUSAT
 - Member 3: Rohith R - CUSAT
 
 ### Project Description
