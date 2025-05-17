@@ -3,7 +3,6 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-
 # Define the maximum number of entries to keep
 MAX_ENTRIES = 20
 
