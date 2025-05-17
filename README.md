@@ -75,7 +75,7 @@ Explain what the video demonstrates
 
 ## Team Contributions
 -Rohit M R : Frontend
--Shenes Eapen Koshi : integrating this chatbot and website together
+-Shenes Eapen Koshy : integrating this chatbot and website together
 -Rohith R : creating roast using flask and groq
 ---
 Made with ❤ at TinkerHub Useless Projects 
